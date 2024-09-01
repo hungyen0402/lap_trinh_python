@@ -6,7 +6,7 @@ def solve(s):
     ans = 0
     for i in range(0, len(s),2):
         if int(s[i]):
-            tich *= s[i]
+            tich *= int(s[i])
             ans = 1
     if ans == 0:
         tich = 0

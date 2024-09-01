@@ -1,15 +1,15 @@
-if __name__ == '__main__':
-    s = input()
-    l = len(s)
-    x = l % 3
-    if x > 0:
-        s1 = s[:x]
-        s1 += ','
-    else:
-        s1 = ''
-    while x < l:
-        s1 += s[x:x+3]
-        if x < l - 3:
-            s1 += ','
-        x += 3
-    print(s1)
+    if __name__ == '__main__':
+        input = sys.stdin.read
+        data = input().split()
+        n , m = int(data[0], data[1])
+        id = 2
+        matrix = []
+        for _ in range(n):
+            row = array('i')
+            for j in range(m):
+                value = int(data[id])
+                row.append(1 if snt(value) else 0)
+                id += 1
+            matrix.append(row)
+        for row in matrix:
+            print(' '.join(map(str, row)))
