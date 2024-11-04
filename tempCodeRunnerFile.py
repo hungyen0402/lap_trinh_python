@@ -1,1 +1,1 @@
-print(key, b[key])
+print(f"x la {x}")

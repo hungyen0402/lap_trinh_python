@@ -1,5 +1,4 @@
-import math 
-x = 6
-print(math.sqrt(x))
-y = 0008
-print(y)
+L = 0
+R = 6
+len = (L+R) >> 1
+print(len)
